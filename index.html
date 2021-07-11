@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+
+    <div style="text-align: center;">
+      <h2>Highest growth in each series </h2>
+      <ul id="Highest-growth">
+          <li>Tanzania</li>
+          <li> Ethiopia</li>
+          <li>Hungary</li>
+          <li>Afghanistan</li>
+      </ul>
+      <h2>Are any countries highly correlated? </h2>
+      <p>Poor countries have bigger growrth rate because they have started from bottom so increase can be done with little investment</p>
+    </div>
+
+
+    <div id="in-between">
+      <input id="start-number" placeholder="enter start point" type="number">
+      <input id="end-number" placeholder="enter end point" type="number">
+      <button id="number-button"> Show </button>
+    </div>
+    <div id="canvas-section ">
+      <h3>Air transport, registered carrier departures worldwide</h3>
+      <canvas id="line-chart-departures" ></canvas>
+      <h3>Air transport, freight (million ton-km)</h3>
+      <canvas id="line-chart-freight" ></canvas>
+      <h3>Air transport, passengers carried</h3>
+      <canvas id="line-chart-passenger" ></canvas>
+      <h3>Logistics performance index: Quality of trade and transport-related infrastructure (1=low to 5=high)</h3>
+      <canvas id="line-chart-logistics" ></canvas>
+    </div>
+    <div>
+      <p>Referance: chart.js used to create charts and computetions done by standart js utils  </p>
+    </div>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
