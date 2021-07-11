@@ -52,6 +52,7 @@ export const drawNumberofDepartures = (countries, start = 0, end = 122) => {
   console.log(cleanDepartures);
 
   let onlyCountries = cleanDepartures
+    .slice(0, 122)
     .sort((c1, c2) =>
       c1.data[14] < c2.data[14] ? 1 : c1.data[14] > c2.data[14] ? -1 : 0
     )
